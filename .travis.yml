@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t arximhdhs/docker-react -f Dockefile.dev .
+  - docker build -t arximhdhs/docker-react -f Dockerfile.dev .
 
 script:
   - docker run -e CI=true arximhdhs/docker-react npm run test
